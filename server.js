@@ -7,7 +7,6 @@ const bodyParser = require("body-parser");
 
 // Utils
 const { getLocalIP } = require("./server-scripts/getLocalIp");
-const { info } = require("console");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
