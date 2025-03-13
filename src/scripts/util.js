@@ -12,6 +12,9 @@ const errorMessage = document.querySelector("#errorMessage");
 // Buttons
 const loginButton = document.querySelector("#loginButton");
 
+// Logo
+const instaLogo = document.querySelector("#instaLogo")
+
 export {
   PUE_label,
   passwordInput,
@@ -19,4 +22,5 @@ export {
   passwordLabel,
   errorMessage,
   loginButton,
+  instaLogo
 };
