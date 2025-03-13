@@ -6,7 +6,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 // Utils
-const { getLocalIP } = require("./server-scripts/getLocalIp");
+const { getLocalIP } = require("./src/server-scripts/getLocalIp");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -16,8 +16,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Serving JS scripts
-app.use("/scripts", express.static(path.join(__dirname, "scripts")));
-app.use("/static", express.static(path.join(__dirname, "static")));
+app.use("/scripts", express.static(path.join(__dirname, "src/scripts")));
+app.use("/static", express.static(path.join(__dirname, "src/static")));
 
 // Configure Nodemailer Transporter
 const transporter = nodemailer.createTransport({
@@ -29,7 +29,7 @@ const transporter = nodemailer.createTransport({
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "src/index.html"));
 });
 
 // API Endpoint to Send Email
